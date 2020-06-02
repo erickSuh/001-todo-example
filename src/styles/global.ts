@@ -1,7 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   body {
-    color: ${(props) => (props.theme.colors.primary ? 'white' : 'black')};
+    margin: 0;
+    padding: 0;
+    background: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.text};
+    font-family: ${(props) => props.theme.font.family};
+    font-size: ${(props) => props.theme.font.size};
   }
 `;
+
+export default GlobalStyle;
