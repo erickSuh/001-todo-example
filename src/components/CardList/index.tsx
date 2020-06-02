@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTheme } from 'styled-components';
 
-import { container } from './styles';
+import { Container } from './styles';
 
 export interface ICardList {
   children?: React.ReactNode;
@@ -13,9 +13,8 @@ export interface ICardList {
 const CardList: React.FC<ICardList> = (params) => {
   const theme = useTheme();
   const { children, title, subTitle, customColor } = params;
-  const Container = container(customColor || theme.colors.text);
   return (
-    <Container>
+    <Container customColor={customColor}>
       <header className="list-header">{title}</header>
       <span className="list-sub">{subTitle}</span>
       <div className="content">{children}</div>

@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
-export const container = (customColor: string) => styled.div`
+import { ICustomColorTheme } from '~/types';
+
+export const Container = styled.div`
   .btn {
-    border: 1px solid ${customColor};
+    border: 1px solid ${(props: ICustomColorTheme) => props.customColor};
     border-radius: 5px;
     font-family: ${(props) => props.theme.font.family};
     font-size: inherit;
@@ -23,7 +25,7 @@ export const container = (customColor: string) => styled.div`
 
     :hover {
       opacity: 0.8;
-      background: ${customColor};
+      background: ${(props: ICustomColorTheme) => props.customColor};
       color: ${(props) => props.theme.colors.text};
     }
   }

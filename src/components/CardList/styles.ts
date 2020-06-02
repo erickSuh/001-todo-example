@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { ICustomColorTheme } from '~/types';
 
-export const container = (customColor: string) => styled.div`
+export const Container = styled.div`
   height: calc(100% - 2 * padding);
   width: 100%;
   min-width: 160px;
@@ -18,7 +19,7 @@ export const container = (customColor: string) => styled.div`
     font-weight: bold;
 
     margin-bottom: 0.5rem;
-    color: ${customColor};
+    color: ${(props: ICustomColorTheme) => props.customColor};
   }
 
   .list-sub {

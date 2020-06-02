@@ -1,7 +1,7 @@
 import React, { MouseEvent } from 'react';
 import styled from 'styled-components';
 
-import { container } from './styles';
+import { Container } from './styles';
 
 export interface IButton {
   label?: string;
@@ -13,11 +13,8 @@ export interface IButton {
 const Button: React.FC<IButton> = (params) => {
   const { label, icon, onClick, customColor } = params;
 
-  //TODO Remove to styles.ts in future
-  const Container = container(customColor || '');
-
   return (
-    <Container>
+    <Container customColor={customColor}>
       <button className="btn" onClick={onClick}>
         {label}
       </button>
