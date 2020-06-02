@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Next steps
+
+1. Unity test with jest;
+2. Implement react-redux;
+3. Add animations;
+4. Fix somes dublicated codes;
+5. Merge all types in a root file;
+6. Make connection with a API;
+
 ## Available Scripts
 
 In the project directory, you can run:
