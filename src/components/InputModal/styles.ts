@@ -13,6 +13,13 @@ export const Container = styled.div`
   background: rgba(52, 53, 94, 0.35);
   z-index: 10;
 
+  .select-container {
+    width: 101%;
+    border-color: none;
+    color: black;
+    font-family: ${(props) => props.theme.font.family};
+  }
+
   .modal-container {
     display: flex;
     flex-direction: column;
@@ -22,6 +29,12 @@ export const Container = styled.div`
     background: #280229;
     width: 30%;
     min-width: 300px;
+
+    .label {
+      display: flex;
+      justify-content: start;
+      width: 100%;
+    }
 
     .modal-header {
       display: flex;
@@ -44,6 +57,8 @@ export const Container = styled.div`
         width: 100%;
         margin-bottom: 3%;
         font-family: ${(props) => props.theme.font.family};
+        border-radius: 4px;
+        padding: 4px;
       }
 
       .input-text {
@@ -51,6 +66,8 @@ export const Container = styled.div`
         margin-bottom: 3%;
         font-family: ${(props) => props.theme.font.family};
         resize: none;
+        border-radius: 4px;
+        padding: 4px;
       }
     }
   }

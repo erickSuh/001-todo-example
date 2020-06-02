@@ -8,18 +8,19 @@ export const Container = styled.div`
   padding: 12px;
   margin: 12px;
 
-  /* not necessary but in the future can be */
-  display: flex;
-  flex-direction: column;
+  .placeholder {
+    display: flex;
+    flex-direction: column;
 
-  .card {
-    font-size: 24px;
-    font-weight: bold;
+    .card {
+      font-size: 24px;
+      font-weight: bold;
 
-    margin-bottom: 0.5rem;
-  }
+      margin-bottom: 0.5rem;
+    }
 
-  .content {
-    margin-bottom: 0.5rem;
+    .content {
+      margin-bottom: 0.5rem;
+    }
   }
 `;

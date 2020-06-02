@@ -8,7 +8,6 @@ declare module 'styled-components' {
       size: string;
     };
     colors: {
-      customProp?: string;
       primary: string;
       secundary: string;
       danger: string;

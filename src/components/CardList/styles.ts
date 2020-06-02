@@ -6,6 +6,7 @@ export const container = (customColor: string) => styled.div`
   min-width: 160px;
   box-shadow: 0 0 0.3em orangered;
   border-radius: 5px;
+  margin-bottom: 12px;
 
   /* not necessary but in the future can be */
   display: flex;
@@ -22,6 +23,7 @@ export const container = (customColor: string) => styled.div`
 
   .list-sub {
     margin: 0 12px;
+    margin-bottom: 12px;
   }
 
   .content {

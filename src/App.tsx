@@ -1,5 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
 
 import Home from '~/containers/Home';
 
@@ -8,10 +10,12 @@ import theme from '~/styles/theme/dark';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Home />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Home />
+      </ThemeProvider>
+    </Provider>
   );
 }
 
